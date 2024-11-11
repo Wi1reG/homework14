@@ -8,8 +8,18 @@ public class Car {
         this.wheelsCount = wheelsCount;
     }
 
+    public void getService() {
+        updateTyre();
+        checkEngine();
+    }
+
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+
+        for (int i = 0; i < getWheelsCount(); i++) {
+            System.out.println("Меняем покрышку");
+        }
+        System.out.println();
+
     }
 
     public void checkEngine() {

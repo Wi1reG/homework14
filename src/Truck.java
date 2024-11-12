@@ -10,11 +10,12 @@ public class Truck extends Car {
         checkEngine();
         checkTrailer();
     }
+
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
 
-    public void check (Truck truck) {
+    public void check(Truck truck) {
 
         if (truck != null) {
             System.out.println("Обслуживаем " + truck.getModelName());
